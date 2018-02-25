@@ -1,26 +1,17 @@
 #include <stdio.h>
 int main()
 {
-	int a[10],n,i,j,t;
-	printf("enter the num");
-	scanf("%d",&n);
+	int  a[10],i,large;
+	printf("enter the value");
+	scanf("%d ",&a[i]);
+	large=a[0];
 	for(i=0;i<=10;i++)
 	{
-		scanf("%d",&a[i]);
-	}
-	for(i=0;i<=n;i++)
-	{
-		for(j=i+1;j<=n;j++)
+		if(large>a[i])
 		{
-			if(a[i]<a[j])
-			{
-				t=a[i];
-				a[j]=a[i];
-				a[j]=t;
-			}
+			large=a[i];
 		}
 	}
-	printf(" %d is the largest number",a[i]);
-	
+	printf("large is %d",large);
 	return 0;
 }
