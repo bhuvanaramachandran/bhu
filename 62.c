@@ -3,17 +3,17 @@
 
 int main(void) {
 	char a[50]="11011";
-	int i,b=0;
+	int i,m=0;
 	
 	for(i=0;i<50;i++)
 	{
 		if(a[i]=='1'||a[i]=='0')
 		{
-			b++;
+			m++;
 		}
 	
 	}
-	if(b>0)
+	if(m>0)
 	{
 		printf("yes");
 	}
